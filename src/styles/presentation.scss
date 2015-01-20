@@ -1,0 +1,47 @@
+.presentation {
+  background: #3d5368 url('../images/city.jpg') center center no-repeat;
+  height: 675px;
+  padding-top: 100px;
+  text-align: center;
+  h1 {
+    color: #fff;
+    font-family: 'Vollkorn', serif;
+    font-size: 72px;
+  }
+  h2 {
+    color: #fff;
+    font-family: 'Vollkorn', serif;
+    font-size: 35px;
+  }
+  .button-wrapper {
+    margin-top: 100px;
+  }
+  a {
+    border-radius: 3px;
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: background .3s;
+    width: 270px;
+    &:hover {
+      background-color: #34495e;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .presentation {
+    h1 {
+      font-size: 135px;
+    }
+    h2 {
+      font-size: 72px;
+    }
+  }
+}
