@@ -1,0 +1,42 @@
+.menu {
+  align-content: center;
+  background-color: #34495e;
+  display: none;
+  a {
+    color: #FFF;
+    line-height: 70px;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    list-style: none;
+    margin-right: 2rem;
+  }
+}
+
+.menu-responsive {
+  padding: 1rem 2rem;
+  .burger {
+    background: url('../images/burger.png') top left no-repeat;
+    display: block;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: block;
+  }
+
+  .menu-responsive {
+    display: none;
+  }
+}

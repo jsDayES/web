@@ -1,11 +1,7 @@
 .social {
+  align-items: center;
+  display: flex;
   background-color: #3d5368;
-  .center {
-    align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 40px;
-  }
   ul {
     display: flex;
     list-style: none;
@@ -18,8 +14,8 @@
   }
   a {
     color: #fff;
-    text-decoration: none;
     font-size: 21px;
     opacity: .7;
+    text-decoration: none;
   }
 }

@@ -1,4 +1,23 @@
+.header-nav {
+  background-color: #3d5368;
+  .center {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.center {
+  padding: 0 1rem;
+  width: 100%;
+}
+
 @media screen and (min-width: 1024px) {
+  .header-nav {
+    .center {
+      flex-direction: row-reverse;
+      height: 40px;
+    }
+  }
   .center {
     margin: 0 auto;
     width: 1120px;
