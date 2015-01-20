@@ -1,0 +1,25 @@
+.social {
+  background-color: #3d5368;
+  .center {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40px;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  li {
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+    opacity: .7;
+  }
+}
