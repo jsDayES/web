@@ -15,6 +15,10 @@ var paths = {
   dist: 'dist/'
 };
 
+var localsJade = {
+  callforpapers: 'https://docs.google.com/forms/d/10VztOmnh5KxzWnV4OFU2_6uicIDuh5XB-9WUJYqLjCw/viewform'
+};
+
 gulp.task('express', function() {
   var express = require('express');
   var app = express();
@@ -56,7 +60,7 @@ gulp.task('sass', ['sass-lint'], function() {
 gulp.task('jade', function() {
   gulp.src(paths.mainJade)
     .pipe(plumber())
-    .pipe(jade({pretty: false}))
+    .pipe(jade({pretty: true, locals: localsJade}))
     .pipe(gulp.dest(paths.dist));
 });
 
