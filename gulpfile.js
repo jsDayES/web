@@ -11,6 +11,7 @@ var paths = {
   jade: 'src/templates/**/*.jade',
   mainSass: 'src/styles/main.scss',
   sass: 'src/styles/**/*.scss',
+  js: 'src/js/**/*.js',
   images: 'src/images/**/*',
   dist: 'dist/'
 };
@@ -40,6 +41,11 @@ gulp.task("copy-images", function() {
     .pipe(gulp.dest(paths.dist + '/images/'));
 });
 
+gulp.task('js', function() {
+  gulp.src(paths.js)
+    .pipe(gulp.dest(paths.dist + '/js/'));
+});
+
 gulp.task('sass-lint', function() {
   gulp.src([paths.sass, '!src/styles/reset.scss'])
     .pipe(scsslint({config: 'scsslint.yml'}))
@@ -67,12 +73,14 @@ gulp.task('jade', function() {
 gulp.task('watch', function() {
   gulp.watch(paths.jade, ['jade']);
   gulp.watch(paths.sass, ['sass']);
+  gulp.watch(paths.js, ['js']);
 });
 
 gulp.task('default', [
   'copy-images',
   'sass',
   'jade',
+  'js',
   'express',
   'watch'
 ])

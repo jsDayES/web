@@ -1,28 +1,39 @@
+body {
+  .main-wrapper {
+    transition: transform .5s;
+  }
+  &.active {
+    .main-wrapper {
+      transform: translate(15rem, 0) scale(1, 1);
+    }
+  }
+}
+
 .menu {
   align-content: center;
   background-color: #34495e;
-  display: none;
+  height: 100%;
+  left: -15rem;
+  position: absolute;
+  top: 0;
+  width: 15rem;
   a {
     color: #FFF;
-    line-height: 70px;
+    display: block;
     font-size: 15px;
+    height: 100%;
+    line-height: 70px;
     text-decoration: none;
     text-transform: uppercase;
+    width: 100%;
     &:hover {
       text-decoration: underline;
     }
   }
-  ul {
-    display: flex;
-  }
-  li {
-    list-style: none;
-    margin-right: 2rem;
-  }
 }
 
 .menu-responsive {
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   .burger {
     background: url('../images/burger.png') top left no-repeat;
     display: block;
@@ -33,7 +44,17 @@
 
 @media screen and (min-width: 1024px) {
   .menu {
-    display: block;
+    height: auto;
+    left: 0;
+    position: static;
+    width: auto;
+    ul {
+      display: flex;
+    }
+    li {
+      list-style: none;
+      margin-right: 2rem;
+    }
   }
 
   .menu-responsive {
