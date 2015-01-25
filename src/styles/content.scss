@@ -74,7 +74,7 @@
     font-weight: 700;
     padding: 15px 0;
     text-align: center;
-    width: 230px;
+    width: 100%;
     &:hover {
       color: #34495e;
       .ico-send {
@@ -87,7 +87,7 @@
         background-position: 0 -355px;
       }
       .ico-ticket {
-        background-position: 0 -408px;
+        background-position: 0 -409px;
       }
     }
   }
@@ -97,18 +97,43 @@
 }
 
 .organizers {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
   list-style: none;
+  padding-top: 20px;
   margin: 0 auto;
-  padding: 40px 0;
-  width: 800px;
+  width: 100%;
+  li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
   img {
     filter: grayscale(100%);
     &:hover {
       transition: all .3s;
       filter: grayscale(0%);
+    }
+  }
+}
+
+iframe {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    a {
+      width: 230px;
+    }
+  }
+
+  .organizers {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    width: 800px;
+    li {
+      margin: 0;
     }
   }
 }
