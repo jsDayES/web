@@ -15,7 +15,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $responsive) {
   .header-nav {
     .center {
       flex-direction: row-reverse;
@@ -24,6 +24,12 @@
   }
   .center {
     margin: 0 auto;
+    width: 1024px;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .center {
     width: 1120px;
   }
 }

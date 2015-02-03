@@ -45,7 +45,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $responsive) {
   .social-footer {
     h1 {
       margin-right: 30px;

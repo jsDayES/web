@@ -119,7 +119,7 @@ iframe {
   width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $responsive) {
   .btn {
     a {
       width: 230px;

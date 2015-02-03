@@ -42,7 +42,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $responsive) {
   .menu {
     height: auto;
     left: 0;

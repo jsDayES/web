@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $responsive) {
   .presentation {
     h1 {
       font-size: 135px;
