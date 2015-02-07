@@ -18,7 +18,8 @@ var paths = {
 
 var localsJade = {
   callforpapers: 'https://docs.google.com/forms/d/10VztOmnh5KxzWnV4OFU2_6uicIDuh5XB-9WUJYqLjCw/viewform',
-  contact: 'AngularJSMadrid@gmail.com',
+  contact: 'hola@jsday.es',
+  twitter: 'https://twitter.com/JSDayES',
 };
 
 gulp.task('express', function() {
