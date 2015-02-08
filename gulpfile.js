@@ -37,7 +37,7 @@ gulp.task('express', function() {
   app.listen(9001);
 });
 
-gulp.task("copy-images", function() {
+gulp.task('copy-images', function() {
   gulp.src(paths.images)
     .pipe(imagemin({progressive: true}))
     .pipe(gulp.dest(paths.dist + '/images/'));
@@ -76,6 +76,7 @@ gulp.task('watch', function() {
   gulp.watch(paths.jade, ['jade']);
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.js, ['js']);
+  gulp.watch(paths.images, ['copy-images']);
 });
 
 gulp.task('default', [
