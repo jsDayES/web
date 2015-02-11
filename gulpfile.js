@@ -20,6 +20,7 @@ var localsJade = {
   callforpapers: 'https://docs.google.com/forms/d/10VztOmnh5KxzWnV4OFU2_6uicIDuh5XB-9WUJYqLjCw/viewform',
   contact: 'hola@jsday.es',
   twitter: 'https://twitter.com/JSDayES',
+  youtube: 'https://plus.google.com/+JsdayEsMadrid/about'
 };
 
 gulp.task('express', function() {
