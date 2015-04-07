@@ -38,8 +38,8 @@ html(lang="es")
           li
             a(href="#section4") agenda
 
-          li
-            a(href="#section5") ponentes
+          // li
+          //   a(href="#section5") ponentes
 
           li
             a(href="#section6") patrocinadores
@@ -56,7 +56,7 @@ html(lang="es")
          h2 9 de Mayo de 2015 en Madrid
 
          .button-wrapper
-           a(href="#{callforpapers}") Participa
+           a(href="#section8") Entradas
 
       .center.content
         section
@@ -73,13 +73,7 @@ html(lang="es")
         section(id="section1")
            h2 ¿A quién esperamos?
 
-           p A todos aquellos, profesionales del sector o curiosos de la tecnología, que quieran aprender más acerca de JavaScript y sus frameworks. Hablaremos – en charlas y en talleres-  de AngularJS, de NodeJS, de Polymer, de HTML5… y de lo que nos propongáis. Estamos deseando ver vuestras propuestas… ¡queda abierto el call for papers!
-
-
-        section(id="section2")
-           h2 Call for papers
-
-           p ¿Quieres participar en la jornada? Envíanos tu propuesta de charla o de taller <a href="#{callforpapers}">a través de este link</a> antes del viernes 29 de Marzo. Prometemos mirar todas las propuestas para seleccionar las mejores y ofreceros el mejor evento de Javascript de Madrid del año.
+           p A todos aquellos, profesionales del sector o curiosos de la tecnología, que quieran aprender más acerca de JavaScript y sus frameworks. Hablaremos – en charlas y en talleres-  de AngularJS, de NodeJS, de Polymer, de HTML5…
 
         section(id="section3")
           h2 Cuándo y dónde
@@ -93,26 +87,9 @@ html(lang="es")
 
            p
              | Estamos trabajando en ella…
-             br
-             | Recuerda que el <span class="bold">Call for papers para recibir vuestras propuestas</span> estará abierto hasta el viernes 29/03/2015.
 
-           div.btn
-             a(href="#{callforpapers}")
-               span.ico-send
-               | Enviar propuestas
-
-        section(id="section5")
-           h2 Ponentes
-
-           p
-             | ¿Quieres dar una charla o impartir un taller?
-             br
-             | Recuerda que el <span class="bold">Call for papers para recibir vuestras propuestas</span> estará abierto hasta el viernes 29/03/2015.
-
-           div.btn
-             a(href="#{callforpapers}")
-               span.ico-participate
-               | Participar
+        // section(id="section5")
+        //    h2 Ponentes
 
         section(id="section6")
            h2 Patrocinadores
@@ -156,17 +133,15 @@ html(lang="es")
         section(id="section8")
            h2 Entradas
 
-           p Estamos trabajando en ello. ¡Próximamente podrás reservar tu entrada!.
+           p Sabemos que es un tema muy interesante y estamos encantados de que vengáis a compartir con nosotros este día, por eso, hemos decidido hacer un esfuerzo y fijar un simbólico precio para las entradas de <span class="bold">¡¡¡CERO euros!!!</span>
 
-           //- p Sabemos que es un tema muy interesante y estamos encantados de que vengáis a compartir con nosotros este día, por eso, hemos decidido hacer un esfuerzo y fijar un simbólico precio para las entradas de <span class="bold">¡¡¡CERO euros!!!</span>
+           p Os pedimos que si, finalmente, no vais a venir y habéis reservado plaza, nos aviséis. ¡Las plazas son limitadas!
+           p Por favor, sed puntuales para que podamos seguir con la agenda prevista
 
-           //- p Os pedimos que si, finalmente, no vais a venir y habéis reservado plaza, nos aviséis. ¡Las plazas son limitadas!
-           //- p Por favor, sed puntuales para que podamos seguir con la agenda prevista
-
-           //- div.btn
-           //-   a(href="#")
-           //-     span.ico-ticket
-           //-     | Entrada
+           div.btn
+             a(href="#{tickets}")
+               span.ico-ticket
+               | Entrada
 
 
       section.social-footer
