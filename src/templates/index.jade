@@ -56,7 +56,7 @@ html(lang="es")
          h2 9 de Mayo de 2015 en Madrid
 
          .button-wrapper
-           a(href="#section8") Entradas
+           a(href="#section8") Entradas agotadas
 
       .center.content
         section
@@ -68,7 +68,7 @@ html(lang="es")
            p
              | Las comunidades tecnológicas de JS en Madrid hemos unido nuestras fuerzas, y como nos encanta la tecnología y sí, somos unos apasionados del Javascript en todas sus vertientes, hemos organizado el I JSDayES en Madrid.
              br
-             | El evento se celebrará el sábado 9 de mayo , de 10:00 a 17:30 en Medialab Prado (Plaza de las Letras c/ Alameda,15, Madrid), en pleno corazón de Madrid.
+             | El evento se celebrará el sábado 9 de Mayo , de 10:00 a 17:30 en Medialab Prado (Plaza de las Letras c/ Alameda,15, Madrid), en pleno corazón de Madrid.
 
         section(id="section1")
            h2 ¿A quién esperamos?
@@ -85,14 +85,134 @@ html(lang="es")
         section(id="section4")
            h2 Agenda
 
-           p
-             | Estamos trabajando en ella…
+           table.schedule
+               thead
+                   tr
+                       td
+                       td Charlas
+                       td.last-child Talleres
+               tbody
+                   tr.special
+                       td 11:00
+                       td.last-child(colspan="2") Registro
+
+                   tr.special
+                       td 11:20
+                       td.last-child(colspan="2") Bienvenida
+
+                   tr.sponsor
+                       td 11:25
+                       td.last-child(colspan="2") Presentación del patrocinador <strong>Adesis</strong>
+
+                   tr
+                       td 11:30
+                       td
+                           | Programación Funcional en JavaScript
+                           span Alejandro Gómez
+                       td.last-child(rowspan="2")
+                           | El mundo de las extensiones
+                           span Gil Casadevall
+
+                   tr
+                       td 12:15
+                       td
+                           | Captura masiva de la experiencia de usuario con javascript, socket.io, nodejs y mongodb
+                           span Pablo Almunia
+
+                   tr
+                       td 13:00
+                       td
+                           | Cómo mejorar el rendimiento de JavaScript.
+                           span Isabel Cabezas
+                       td.last-child
+                   tr.sponsor
+                       td 13:45
+                       td.last-child(colspan="2") Presentación del patrocinador <strong>Avature</strong>
+
+                   tr.break
+                       td 13:50
+                       td.last-child(colspan="2") Comida
+
+                   tr
+                       td 14:45
+                       td
+                           | Web Speech API
+                           span Aurelio de Rosa
+                       td.last-child(rowspan="2")
+                           | Arquitectura en 3 capas y modelos ricos en AngularJS
+                           span Lorenzo González
+                   tr
+                       td 15:30
+                       td
+                           | Angular2, the new kid on the block
+                           span Gonzalo Ruiz de Villa
+
+                   tr.sponsor
+                       td 16:15
+                       td.last-child(colspan="2") Presentación del patrocinador <strong>Kaleidos</strong>
+
+                   tr
+                       td 16:20
+                       td
+                           | Web Cryptography
+                           span Jose Manuel Ortega
+
+                       td.last-child(rowspan="2")
+                           | Realizar una API utilizando RAML y las herramientas de Mulesoft
+                           span Marco Antonio Sanz
+
+                   tr
+                       td 17:05
+                       td
+                           | ReactJS is a JavaScript library for creating user interfaces with primary focus on performance
+                           span Ilian Peychev
+
+
+                   tr.sponsor
+                       td 17:50
+                       td.last-child(colspan="2") Presentación del patrocinador <strong>FIK</strong>
+
+                   tr.break
+                       td 17:55
+                       td.last-child(colspan="2") Merienda
+
+                   tr
+                       td 18:15
+                       td
+                           | Metaprogramación en JavaScript
+                           span Javier Vélez
+                       td.last-child
+                           | Javascript como motor del prototipos de control de hardware a través de Internet
+                           span Alberto lópez
+
+                   tr.special
+                       td 19:00
+                       td.last-child(colspan="2") Despedida
+
 
         // section(id="section5")
         //    h2 Ponentes
 
         section(id="section6")
            h2 Patrocinadores
+
+           ul.sponsors
+             li
+               a(href="http://www.adesis.com/", target="_blank")
+                 img(src="/images/sponsor1.jpg")
+             li
+               a(href="http://kaleidos.net/", target="_blank")
+                 img(src="/images/sponsor2.png")
+             li
+               a(href="https://fikstores.com/", target="_blank")
+                 img(src="/images/sponsor3.jpg")
+             li
+               a(href="http://autentia.com/", target="_blank")
+                 img(src="/images/sponsor4.png")
+             li
+               a(href="https://www.avature.net/", target="_blank")
+                 img(src="/images/sponsor5.png")
+
 
            p
              | ¿Quieres ser patrocinador? <span class="bold">Contacta con nosotros</span>
@@ -138,10 +258,12 @@ html(lang="es")
            p Os pedimos que si, finalmente, no vais a venir y habéis reservado plaza, nos aviséis. ¡Las plazas son limitadas!
            p Por favor, sed puntuales para que podamos seguir con la agenda prevista
 
+           p <strong>¿Te has quedado sin plaza para acudir?</strong> No te preocupes, tendremos una conexión vía streaming para que no te pierdas las charlas.
+
            div.btn
-             a(href="#{tickets}")
+             a()
                span.ico-ticket
-               | Entrada
+               | Entradas agotadas
 
 
       section.social-footer
